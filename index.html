@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Store Landing Page</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="top-nav">
+        <div class="flaggy">
+          <img src="./images/seal-ga005aabd1_640.png" alt="My Logo" />
+          <p>My Store</p>
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button-container" for="menu-toggle">
+          <div class="menu-button"></div>
+        </label>
+        <ul class="menu">
+          <li><a href="#">About Us</a></li>
+          <li>
+            <a href="#">Our Products</a>
+          </li>
+          <li><a href="#">Contact Us</a></li>
+          <li>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i> Check Out</a>
+          </li>
+          <li>
+            <input
+              type="button"
+              onclick="darkFunction()"
+              id="dark"
+              value="Night Mode"
+            />
+          </li>
+        </ul>
+      </section>
+      <section id="head">
+        <h1>My Store</h1>
+        <img src="./images/seal-ga005aabd1_640.png" alt="Logo" />
+      </section>
+      <section id="products">
+        <div class="member">
+          <h2>Join Our $avers Club!</h2>
+          <p>
+            Collect points for discounts and get our weekly newsletter in your
+            email inbox full of coupons and savings.
+          </p>
+          <button id="myBtn">Join Today and $ave!</button>
+        </div>
+        <div class="slideshow-container">
+          <h1>Our Featured Products</h1>
+          <div class="mySlides fade">
+            <img src="./images/tv.jpg" style="width: 100%" />
+          </div>
+          <div class="mySlides fade">
+            <img src="./images/shirts.jpg" style="width: 100%" />
+          </div>
+          <div class="mySlides fade">
+            <img src="./images/jeans.jpg" style="width: 100%" />
+          </div>
+          <div class="mySlides fade">
+            <img src="./images/paint.jpg" style="width: 100%" />
+          </div>
+          <div class="mySlides fade">
+            <img src="./images/toys.jpg" style="width: 100%" />
+          </div>
+        </div>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Join Today and Start Saving</h2>
+            <form action="#">
+              <label for="name">First and Last Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name.."
+              />
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your email address.."
+                autocomplete="off"
+              />
+              <input type="submit" value="Submit" />
+              <div class="terms"><a href="#">Terms and Conditions</a></div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section id="shop">
+        <h1>Come SHOP and <span class="green">$</span>AVE!</h1>
+        <div class="departments">
+          <div class="card dept">
+            <img src="./images/grocery.jpg" alt="Grocery Department" />
+            <h3>Grocery Department</h3>
+            <p>Come Save on the best food selection</p>
+            <button type="button" class="deptbutt">Shop Now</button>
+          </div>
+          <div class="card dept">
+            <img src="./images/garden.jpg" alt="Garden Department" />
+            <h3>Outdoor Living and Garden</h3>
+            <p>For our Outdoor Enthusiasts</p>
+            <button type="button" class="deptbutt">Shop Now</button>
+          </div>
+          <div class="card dept">
+            <img
+              src="./images/electronics.jpg"
+              alt="Home Electronics Department"
+            />
+            <h3>Home Electronics</h3>
+            <p>Come see all the newest gear!</p>
+            <button type="button" class="deptbutt">Shop Now</button>
+          </div>
+          <div class="card dept">
+            <img src="./images/grocery.jpg" alt="Grocery Department" />
+            <h3>Grocery Department</h3>
+            <p>Come Save on the best food selection</p>
+            <button type="button" class="deptbutt">Shop Now</button>
+          </div>
+          <div class="card dept">
+            <img src="./images/garden.jpg" alt="Garden Department" />
+            <h3>Outdoor Living and Garden</h3>
+            <p>For our Outdoor Enthusiasts</p>
+            <button type="button" class="deptbutt">Shop Now</button>
+          </div>
+          <div class="card dept">
+            <img
+              src="./images/electronics.jpg"
+              alt="Home Electronics Department"
+            />
+            <h3>Home Electronics</h3>
+            <p>Come see all the newest gear!</p>
+            <button type="button" class="deptbutt">Shop Now</button>
+          </div>
+        </div>
+      </section>
+      <section id="specials">
+        <h1>Our Weekly <span class="green">$</span>pecials</h1>
+        <div class="specialcards">
+        <div class="card">
+          <img src="./images/coke.png" alt="Garden Department" style="width: 71%;"/>
+          <h3>12 pack Coca-Cola</h3>
+          <p>$4.99</p>
+          <input type="button" class="deptbutt speca" onclick="location.href = 'https://www.coca-colacompany.com'"  value="Buy Now!">
+        </div><div class="card">
+          <img src="./images/tv1.jpg" alt="Garden Department" />
+          <h3>42" Smart Television</h3>
+          <p>$299</p>
+          <input type="button" class="deptbutt speca" onclick="location.href = 'https://www.coca-colacompany.com'"  value="Buy Now!">
+        </div>
+        <div class="card">
+          <img src="./images/mower.png" alt="Garden Department" style="width: 67%;"/>
+          <h3>Lawn Mower</h3>
+          <p>$199.99</p>
+          <input type="button" class="deptbutt speca" onclick="location.href = 'https://www.coca-colacompany.com'"  value="Buy Now!">
+        </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div
+          class="item social"
+          style="text-align: center; display: flex; flex-direction: column"
+        >
+          <h3 class="footy">Social Media</h3>
+          <div class="social1">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <div>
+            <p style="color: #fff; margin-top: 20px">Ⓒ 2023 - My Store LTD</p>
+          </div>
+        </div>
+        <div class="item contact">
+          <h3 class="footy">Contact Us</h3>
+          <p>
+            123 Main St.<br />
+            Anytown, CA, 55555<br />(555) 555-5555<br />
+            savings@mystore.store
+          </p>
+        </div>
+        <div class="item privacy">
+          <a href="#">Privacy Policy</a>
+          <a href="#"><span class="smaller">Terms and Conditions</span></a>
+          <a href="#">Careers</a>
+        </div>
+      </footer>
+      <div style="height: 25px"></div>
+      <!--- <script type="text/javascript" href="/js/main.js"></script> -->
+    </main>
+    <script>
+      function darkFunction() {
+        let element = document.body;
+        element.classList.toggle("dark-mode");
+      }
+
+      document.getElementById("dark").addEventListener(
+        "click",
+        function (e) {
+          if (event.target.value === "Day Mode") {
+            event.target.value = "Night Mode";
+          } else {
+            event.target.value = "Day Mode";
+          }
+        },
+        false
+      );
+      const darker = document.querySelector("#dark");
+      darker.addEventListener("click", (e) => {
+        darker.style.width = "75px";
+      });
+
+      let slideIndex = 0;
+      showSlides();
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        setTimeout(showSlides, 2500);
+        slides[slideIndex - 1].style.display = "block";
+      }
+
+      const modal = document.getElementById("myModal");
+      const btn = document.getElementById("myBtn");
+      const span = document.getElementsByClassName("close")[0];
+
+      btn.onclick = function () {
+        modal.style.display = "block";
+      };
+
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>
